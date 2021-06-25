@@ -9,28 +9,39 @@
     <title>Consulta Cep Online &#x1F3E0;</title>
 </head>
 <body>
+
     <header>
-        <h1>Busca Cep Online</h1>
+        <h1>Busca Cep</h1>
     </header>
+
     <section class="busca">
-        <input type="search" name="buscarE" id="buscarE">
-        <abbr title="digite algum cep"><input type="button" value="procurar" ></abbr>
+
+        <input type="search" name="cepUsuario" id="cepUsuario">
+        <abbr title="pesquisar"><input type="button" ></abbr>
        
     </section>
 
     <section class="resultadoBusca">
-        <div class="cep">CEP</div>
-        <div class="longradouro">LONGRADOURO</div>
-        <div class="complemento">COMPLEMENTO</div>
-        <div class="bairro">BAIRRO</div>
-        <div class="localidade">LOCALIDADE</div>
-        <div class="uf">UF</div>
-        <div class="DDD">DDD</div>
-        
+
+        <div class="todos">
+            <div class="esquerda">
+                <div class="longradouro" id='longradouro'>LONGRADOURO</div>
+                <div class="complemento" id='complemento'>COMPLEMENTO</div>
+                <div class="bairro" id='bairro'>BAIRRO</div>
+            </div>
+            <div class="direita">
+                <div class="localidade" id='localidade'>LOCALIDADE</div>
+                <div class="uf" id='uf'>UF</div>
+                <div class="DDD" id='DDD'>DDD</div>
+            </div>
+        </div>
+    
         
     </section>
+
     <footer class="rodape">
         <p>&copy;William C Barbosa</p>
     </footer>
+
 </body>
 </html>

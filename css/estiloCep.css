@@ -1,0 +1,94 @@
+*{
+    padding: 0px;
+    margin: 1px;
+    text-align: center;
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #D49024;
+}
+
+body{
+    background-color:  #6E4A91;
+}
+header{
+    padding-top: 10vh;
+    text-align: center;
+    margin: 0 auto;
+}
+header h1 {
+    
+    font-size: 6vh;
+}
+
+section.busca {
+    margin: auto;
+    padding: 2vh;
+    padding-bottom: 4vh;
+
+}
+
+section.resultadoBusca{
+    padding: 2vh;
+    width: 70vh;
+    height: 30vh;
+    margin: 0 auto;
+    background-color:#321C45 ;
+    border-radius: 1.5vh;
+    
+}
+
+
+footer{
+    padding: 3.5vh;
+}
+
+
+
+div.todos{
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between; /* switched from default (flex-start, see below) */
+  padding: 10vh;
+
+  
+}
+
+input[type='search']{
+    width: 25vh;
+    height: 3.5vh;
+    border-radius: 0.3vh;
+    outline: none;
+    border-top: none;
+    border-left:  none;
+    border-right: none;
+    border-color: #D49024;
+    border-width: 2px;
+    background-color: #714A91;
+    color: hsl(44, 100%, 45%);
+    font-size: 2vh;
+    
+}
+
+input[type='search']:hover{
+    transition: 2s;
+    background-color: #321C45;
+}
+
+
+input[type='button']{
+    background-color: #6E4A91;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 26.5px;
+    height: 24px;
+    background-image: url('../images/Search-icon.png');
+}
+
+section.resultadoBusca:hover{
+    transition: 2s;
+    
+    background-color: #23472fc4;
+}
+
