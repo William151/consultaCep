@@ -1,0 +1,5 @@
+git push -u origin main
+-> azul 1 #2B58AD
+-> azul 2 #3277FA
+-> salmão #FA654A
+-> quase marrom #AD3723
