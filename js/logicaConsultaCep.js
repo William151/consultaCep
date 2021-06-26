@@ -1,7 +1,7 @@
-// pegando elementos do HTML
-var cepUsuario = window.document.getElementById('cepUsuario')
+var objetoElementoHTML = () => {
+    
+}
 
-cepUsuario.addEventListener('keypress', () => {
-    cepUsuario.value
-}, false)
-
+function verificarEntrada(){
+    
+}

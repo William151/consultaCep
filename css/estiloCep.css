@@ -92,3 +92,7 @@ section.resultadoBusca:hover{
     background-color: #23472fc4;
 }
 
+p {
+    padding: 2.5vh;
+    font-size: 3.5vh;
+}
