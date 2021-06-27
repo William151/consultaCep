@@ -38,7 +38,7 @@ section.resultadoBusca{
 }
 
 
-footer{
+footer p{
     padding: 3.5vh;
 }
 
@@ -95,4 +95,8 @@ section.resultadoBusca:hover{
 p {
     padding: 2.5vh;
     font-size: 3.5vh;
+}
+
+div {
+    font-size: 1.9vh;
 }
