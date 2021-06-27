@@ -29,7 +29,8 @@ section.busca {
 
 section.resultadoBusca{
     padding: 2vh;
-    width: 70vh;
+    max-width: 70vh;
+    min-width: 50vh;
     height: 30vh;
     margin: 0 auto;
     background-color:#321C45 ;
@@ -40,19 +41,9 @@ section.resultadoBusca{
 
 footer p{
     padding: 3.5vh;
+    font-size: 2.5vh;
 }
 
-
-
-div.todos{
-  display: flex;                  /* establish flex container */
-  flex-direction: row;            /* default value; can be omitted */
-  flex-wrap: nowrap;              /* default value; can be omitted */
-  justify-content: space-between; /* switched from default (flex-start, see below) */
-  padding: 10vh;
-
-  
-}
 
 input[type='search']{
     width: 25vh;
@@ -67,6 +58,7 @@ input[type='search']{
     background-color: #714A91;
     color: hsl(44, 100%, 45%);
     font-size: 2vh;
+    
     
 }
 
@@ -98,5 +90,12 @@ p {
 }
 
 div {
-    font-size: 1.9vh;
+    font-size: 2.7vh;
+    text-align: center;
+    padding: 2px;
+    
+}
+
+a {
+    text-decoration: none;
 }

@@ -1,12 +1,12 @@
-import {apiBusca } from './apiBusca.js'
+import {apiBusca} from './apiBusca.js'
 
-let  objetoElementosHTML = () => {
+export let  objetoElementosHTML = () => {
     return {
 
         'entradaCep': window.document.getElementById('cepUsuario'),
         'botaoPesquisar': window.document.getElementById('botaoPesquisar'),
         'cepInfo' : window.document.getElementById('cepInfo'),
-        'longradouro': window.document.getElementById("botaoPesquisar"),
+        'logradouro': window.document.getElementById("logradouro"),
         'complemento': window.document.getElementById('complemento'),
         'bairro': window.document.getElementById('bairro'),
         'localidade': window.document.getElementById('localidade'),
@@ -38,14 +38,20 @@ let validarEntrada = (entrada, elementoInformativo) => {
     } 
 }
 
-
+let chamadaParaEvento = () => {
+    let {entradaCep,  cepInfo} = objetoElementosHTML() // decompondo
+        
+        validarEntrada(entradaCep, cepInfo)
+}
 
 // eventos
 objetoElementosHTML().entradaCep.addEventListener('keypress', (evento) => {
     if(evento.key == 'Enter'){
-        let {entradaCep,  cepInfo} = objetoElementosHTML() // decompondo
-        
-        validarEntrada(entradaCep, cepInfo)
+        chamadaParaEvento()
     }
 })
 
+
+objetoElementosHTML().botaoPesquisar.addEventListener('click', () =>{
+    chamadaParaEvento()
+})
